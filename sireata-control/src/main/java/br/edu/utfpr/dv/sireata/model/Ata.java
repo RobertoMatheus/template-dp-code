@@ -61,7 +61,7 @@ public class Ata {
 	private byte[] documento;
 	private List<Pauta> pauta;
 	private List<AtaParticipante> participantes;
-	private List<Anexo> anexos;
+	//private List<Anexo> anexos;
 	
 	public Ata(){
 		this.setIdAta(0);
@@ -80,7 +80,7 @@ public class Ata {
 		this.setDataPublicacao(new Date());
 		this.setPauta(null);
 		this.setParticipantes(null);
-		this.setAnexos(null);
+		//this.setAnexos(null);
 	}
 	
 	public int getIdAta() {
@@ -191,12 +191,13 @@ public class Ata {
 	public void setAceitarComentarios(boolean aceitarComentarios) {
 		this.aceitarComentarios = aceitarComentarios;
 	}
+	/*
 	public List<Anexo> getAnexos() {
 		return anexos;
 	}
 	public void setAnexos(List<Anexo> anexos) {
 		this.anexos = anexos;
-	}
+	}*/
 	public String getNome(){
 		DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
 		
