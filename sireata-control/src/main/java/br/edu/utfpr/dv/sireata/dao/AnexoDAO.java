@@ -138,7 +138,7 @@ public class AnexoDAO {
         Anexo anexo = new Anexo();
 
         anexo.setIdAnexo(rs.getInt("idAnexo"));
-        anexo.getAta().setIdAta(rs.getInt("idAta"));
+        //anexo.getAta().setIdAta(rs.getInt("idAta"));
         anexo.setDescricao(rs.getString("descricao"));
         anexo.setOrdem(rs.getInt("ordem"));
         anexo.setArquivo(rs.getBytes("arquivo"));
